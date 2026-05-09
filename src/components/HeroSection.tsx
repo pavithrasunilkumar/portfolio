@@ -7,6 +7,7 @@ const TYPING_STRINGS = [
   'AI & Data Science Engineer',
   'Machine Learning Researcher',
   'Computer Vision Specialist',
+  'Software developer',
   'Full-Stack Developer',
   'GenAI Explorer',
 ];
@@ -395,9 +396,9 @@ export default function HeroSection() {
               className="flex gap-8 mt-2"
             >
               {[
-                { label: 'Projects', value: '9+' },
+                { label: 'Projects', value: '10+' },
                 { label: 'CGPA', value: '7.98' },
-                { label: 'Certifications', value: '4+' },
+                { label: 'Certifications', value: '10+' },
               ].map(stat => (
                 <div key={stat.label} className="flex flex-col">
                   <span className="text-2xl font-black gradient-text">{stat.value}</span>

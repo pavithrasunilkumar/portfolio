@@ -46,212 +46,459 @@ export const projects: Project[] = [
     id: 'inhire',
     name: 'InHire',
     tagline: 'Swipe-Based AI Job Discovery Platform',
-    description: 'A Tinder-like job discovery platform powered by AI that matches candidates to roles based on skill vectors, preferences, and career trajectory — making job hunting intuitive and intelligent.',
+    description: 'description: InHire is a full-stack AI-powered job and internship discovery platform that transforms traditional job searching into an intelligent swipe-based experience. The platform uses machine learning, behavioral analytics, and NLP-driven resume-job matching to deliver highly personalized opportunity recommendations, adaptive ranking, and real-time preference learning for smarter career discovery.',
     problem: "Traditional job boards overwhelm candidates with irrelevant listings, leading to decision fatigue and poor matches. Job seekers need a smarter, more engaging way to discover opportunities aligned with their actual skills.",
-    approach: 'Built a swipe-based interface backed by an AI recommendation engine using collaborative filtering and NLP-based skill extraction. The system learns from user swipe behavior to continuously refine job matches using real-time feedback loops.',
+    approach: 'Designed and developed a full-stack swipe-based recommendation platform using React, Node.js, and MongoDB with an ML-driven matching engine. Implemented NLP-based resume parsing, semantic similarity scoring, and behavioral learning pipelines to analyze user interactions, adapt recommendations in real time, and improve job relevance through personalized ranking algorithms.',
+    
     features: [
-      'Swipe-based intuitive job card interface',
-      'AI-powered skill vector matching engine',
-      'Real-time preference learning from interactions',
-      'Smart filters by role, stack, and culture fit',
-      'Instant apply with parsed resume data',
-      'Match score transparency dashboard',
+  'Swipe-based job and internship discovery interface',
+  'ML-powered personalized recommendation engine',
+  'NLP-based resume and job description matching',
+  'Real-time adaptive ranking from user interactions',
+  'Semantic similarity scoring and skill analysis',
+  'Responsive full-stack dashboard with dynamic job feeds'
     ],
-    tech: ['Python', 'React', 'Node.js', 'NLP', 'Collaborative Filtering', 'MongoDB', 'REST APIs'],
+    
+    tech: [
+  'Python',
+  'Machine Learning',
+  'NLP',
+  'React.js',
+  'Node.js',
+  'MongoDB',
+  'REST APIs',
+  'JavaScript',
+  'FastAPI',
+],
     color: '#00F5FF',
     icon: '🎯',
     github: 'https://github.com/pavithrasunilkumar/InHire',
-    live: 'https://inhire-demo.vercel.app', // ← REPLACE with your real URL
-    screenshots: [
-      { label: 'Job Discovery Feed',    bg: '#030F14', accent: '#00F5FF', imageUrl: '' },
-      { label: 'Match Score Dashboard', bg: '#030814', accent: '#0EA5E9', imageUrl: '' },
-      { label: 'Profile & Skills',      bg: '#020810', accent: '#00F5FF', imageUrl: '' },
-    ],
+    live: 'https://in-hire.vercel.app/login', 
+   screenshots: [
+  {
+    label: 'Job Discovery Feed',
+    bg: '#030F14',
+    accent: '#00F5FF',
+    imageUrl: '/screenshots/inhire/image1.png',
+  },
+  {
+    label: 'Match Score Dashboard',
+    bg: '#030814',
+    accent: '#0EA5E9',
+    imageUrl: '/screenshots/inhire/image2.png',
+  },
+  {
+    label: 'Profile & Skills',
+    bg: '#020810',
+    accent: '#00F5FF',
+    imageUrl: '/screenshots/inhire/image3.png',
+  },
+],
   },
   {
     id: 'intrivue',
     name: 'IntriVue',
     tagline: 'AI Interview Intelligence Platform',
-    description: 'An end-to-end AI interview simulation and analysis platform that coaches candidates in real-time using LLMs, speech analysis, and behavioral scoring — turning every practice session into actionable feedback.',
+    description: 'IntriVue is an AI-powered interview intelligence platform that generates personalized mock interviews from resumes and job descriptions using machine learning, NLP, and LLM-based semantic analysis to deliver real-time evaluation and actionable feedback.',
     problem: "Candidates lack access to personalized, data-driven interview preparation. Generic prep resources don't adapt to individual weakness patterns or role-specific competencies.",
     approach: 'Integrated large language models for domain-specific question generation, real-time speech-to-text analysis, sentiment scoring, and a multi-dimensional feedback engine that benchmarks against successful interview patterns.',
     features: [
+      'Personalized AI-generated mock interviews',
+      'Resume and job description based question generation',
+      'Real-time speech-to-text and semantic analysis',
+      'AI-powered confidence and communication scoring',
+      'Skill-gap analysis and performance tracking',
       'LLM-powered adaptive question generation',
-      'Real-time speech analysis and transcription',
-      'Behavioral scoring with STAR method detection',
       'Confidence and sentiment heatmaps',
       'Role-specific competency frameworks',
       'Progress tracking across sessions',
     ],
-    tech: ['Python', 'LLMs', 'NLP', 'Speech-to-Text', 'React', 'FastAPI', 'PostgreSQL'],
+    tech: [
+  'Python',
+  'Machine Learning',
+  'NLP',
+  'LLMs',
+  'React.js',
+  'Node.js',
+  'FastAPI',
+  'MongoDB',
+  'REST APIs',
+],
     color: '#7B2FBE',
     icon: '🤖',
     github: 'https://github.com/pavithrasunilkumar/IntriVue',
-    live: 'https://intrivue.vercel.app', // ← REPLACE with your real URL
-    screenshots: [
-      { label: 'Interview Simulator', bg: '#0A0514', accent: '#7B2FBE', imageUrl: '' },
-      { label: 'Feedback Analytics',  bg: '#080414', accent: '#6D28D9', imageUrl: '' },
-      { label: 'Session History',     bg: '#060314', accent: '#7B2FBE', imageUrl: '' },
-    ],
+    live: 'https://intri-vue.vercel.app/login', // ← REPLACE with your real URL
+   screenshots: [
+  {
+    label: 'Interview Simulator',
+    bg: '#0A0514',
+    accent: '#7B2FBE',
+    imageUrl: '/screenshots/intrivue/image1.png',
   },
   {
-    id: 'pathAegis',
-    name: 'PathAegis',
-    tagline: 'AI Career Path Guardian',
-    description: 'Intelligent career navigation system that analyzes your skills, industry trends, and market demand to generate personalized step-by-step career roadmaps with real-time opportunity alerts.',
-    problem: 'Most professionals lack data-driven career strategy — relying on guesswork and fragmented advice, missing high-value skill investments and role transitions.',
-    approach: 'Combined resume parsing, graph-based skill dependency mapping, and LLM-driven roadmap generation with live job market signals for always-relevant recommendations.',
-    features: [
-      'AI-generated personalized career roadmaps',
-      'Skill gap analysis against target roles',
-      'Live job market trend integration',
-      'Graph-based skill dependency visualization',
-      'Curated micro-learning path suggestions',
-      'Opportunity alert & tracking system',
-      'Resume & LinkedIn optimization tips',
-      'Salary benchmarking by role & location',
-    ],
-    tech: ['Python', 'LLMs', 'Graph Algorithms', 'React', 'FastAPI', 'NLP', 'MongoDB', 'REST APIs'],
-    color: '#FFB800',
-    icon: '🧭',
-    github: 'https://github.com/pavithrasunilkumar/PathAegis',
-    live: 'https://pathaegis.vercel.app', // ← REPLACE with your real URL
-    screenshots: [
-      { label: 'Career Roadmap View', bg: '#0E0900', accent: '#FFB800', imageUrl: '' },
-      { label: 'Skill Gap Dashboard', bg: '#0C0800', accent: '#D97706', imageUrl: '' },
-      { label: 'Opportunity Feed',    bg: '#0A0700', accent: '#FFB800', imageUrl: '' },
-    ],
+    label: 'Feedback Analytics',
+    bg: '#080414',
+    accent: '#6D28D9',
+    imageUrl: '/screenshots/intrivue/image2.png',
   },
   {
-    id: 'securesight',
-    name: 'SecureSight AI',
-    tagline: 'Privacy Risk Scoring System',
-    description: 'An intelligent privacy risk assessment platform that analyzes data flows, user permissions, and system behaviors to generate real-time privacy risk scores and compliance alerts.',
-    problem: 'Organizations struggle to monitor and quantify privacy risks across complex data pipelines, leading to compliance failures and data breaches that could have been prevented.',
-    approach: 'Developed a multi-layer risk scoring model combining static analysis of data access patterns, dynamic monitoring of API calls, and ML-based anomaly detection to produce actionable risk scores with explainable outputs.',
-    features: [
-      'Real-time privacy risk score dashboard',
-      'Automated data flow mapping and analysis',
-      'GDPR/CCPA compliance breach detection',
-      'ML-based behavioral anomaly detection',
-      'Explainable AI risk justifications',
-      'Automated remediation recommendations',
-    ],
-    tech: ['Python', 'Machine Learning', 'FastAPI', 'React', 'Docker', 'Graph Analysis', 'SQL'],
-    color: '#FF3CAC',
-    icon: '🔐',
-    github: 'https://github.com/pavithrasunilkumar/SecureSightAI',
-    live: 'https://securesight-ai.vercel.app',
-    screenshots: [
-      { label: 'Risk Score Overview', bg: '#0F0306', accent: '#FF3CAC', imageUrl: '' },
-      { label: 'Data Flow Graph',     bg: '#0D0205', accent: '#E11D48', imageUrl: '' },
-      { label: 'Compliance Alerts',   bg: '#0B0204', accent: '#FF3CAC', imageUrl: '' },
-    ],
+    label: 'Session History',
+    bg: '#060314',
+    accent: '#7B2FBE',
+    imageUrl: '/screenshots/intrivue/image3.png',
+  },
+],
   },
   {
-    id: 'maritime-sentinel',
-    name: 'Maritime Sentinel',
-    tagline: 'AI Coastal Monitoring System',
-    description: 'A deep learning-based maritime surveillance system that monitors coastal zones using satellite and drone imagery to detect unauthorized vessels, oil spills, and environmental anomalies in real-time.',
-    problem: 'Coastal authorities face massive blind spots in monitoring vast maritime zones, with manual surveillance being too slow and resource-intensive to be effective against modern threats.',
-    approach: 'Deployed YOLO-based object detection models on satellite imagery streams, combined with AIS data fusion and temporal anomaly detection to build a real-time alert system for maritime threats and environmental events.',
-    features: [
-      'Real-time satellite imagery analysis',
-      'YOLO-based vessel detection and classification',
-      'Oil spill and environmental anomaly detection',
-      'AIS data fusion for vessel tracking',
-      'Automated threat alert system',
-      'Geospatial visualization dashboard',
-    ],
-    tech: ['Python', 'YOLO', 'Computer Vision', 'Deep Learning', 'GIS', 'OpenCV', 'FastAPI'],
-    color: '#00C9FF',
-    icon: '🌊',
-    github: 'https://github.com/pavithrasunilkumar/MaritimeSentinel',
-    live: 'https://maritime-sentinel.vercel.app',
-    screenshots: [
-      { label: 'Coastal Surveillance Map', bg: '#020C10', accent: '#00C9FF', imageUrl: '' },
-      { label: 'Vessel Detection Feed',    bg: '#020A0D', accent: '#0891B2', imageUrl: '' },
-      { label: 'Anomaly Alerts',           bg: '#01080B', accent: '#00C9FF', imageUrl: '' },
-    ],
-  },
+  id: 'pathAegis',
+  name: 'PathAegis',
+  tagline: 'Real-Time AI Pothole Detection System',
+
+  description: 'PathAegis is a full-stack AI-powered pothole detection and road monitoring platform that uses computer vision and real-time video analysis to identify potholes, track geolocation data, and visualize road damage through an interactive analytics dashboard.',
+
+  problem: 'Manual road inspection is time-consuming, expensive, and inefficient, leading to delayed pothole detection and poor road maintenance management.',
+
+  approach: 'Built a real-time computer vision pipeline using YOLOv8 and OpenCV for pothole detection, integrated with geolocation tracking and interactive dashboard visualization for live road monitoring and analytics.',
+
+  features: [
+    'Real-time pothole detection using computer vision',
+    'YOLOv8-based object detection and video analysis',
+    'Interactive OpenStreetMap-based visualization',
+    'Live geolocation tracking and monitoring',
+    'Real-time analytics and reporting dashboard',
+    'Scalable backend APIs for live detection processing',
+  ],
+
+  tech: [
+    'Python',
+    'Machine Learning',
+    'Computer Vision',
+    'YOLOv8',
+    'OpenCV',
+    'React.js',
+    'Node.js',
+    'REST APIs',
+    'OpenStreetMap',
+  ],
+
+  color: '#FFB800',
+  icon: '🛣️',
+
+  github: 'https://github.com/pavithrasunilkumar/PathAegis',
+  live: 'https://path-aegis.vercel.app/',
+
+  screenshots: [
+    {
+      label: 'Live Detection',
+      bg: '#0E0900',
+      accent: '#FFB800',
+      imageUrl: '/screenshots/pathaegis/image1.png',
+    },
+    {
+      label: 'Map Dashboard',
+      bg: '#0C0800',
+      accent: '#D97706',
+      imageUrl: '/screenshots/pathaegis/image2.png',
+    },
+    {
+      label: 'Analytics View',
+      bg: '#0A0700',
+      accent: '#FFB800',
+      imageUrl: '/screenshots/pathaegis/image3.png',
+    },
+  ],
+},
   {
-    id: 'crowdsense',
-    name: 'CrowdSense AI',
-    tagline: 'Intelligent Crowd Detection System',
-    description: 'A real-time crowd density estimation and behavior analysis system using computer vision, capable of detecting anomalies, predicting stampede risks, and triggering safety alerts in public venues.',
-    problem: 'Public safety in crowded venues remains a major challenge, with reactive emergency responses often being too late. Predictive crowd intelligence can save lives.',
-    approach: 'Trained CNN-based density estimation models on multi-camera feeds, integrated optical flow for movement pattern analysis, and built a risk prediction pipeline that issues proactive safety alerts before dangerous situations escalate.',
-    features: [
-      'Real-time crowd density heat mapping',
-      'Anomaly and stampede risk prediction',
-      'Multi-camera feed integration',
-      'Optical flow movement analysis',
-      'Proactive safety alert system',
-      'Historical crowd analytics dashboard',
-    ],
-    tech: ['Python', 'OpenCV', 'CNN', 'Deep Learning', 'RTSP Streams', 'Flask', 'React'],
-    color: '#FFB800',
-    icon: '👥',
-    github: 'https://github.com/pavithrasunilkumar/CrowdSenseAI',
-    live: 'https://crowdsense-ai.vercel.app',
-    screenshots: [
-      { label: 'Density Heatmap',   bg: '#0E0700', accent: '#FFB800', imageUrl: '' },
-      { label: 'Risk Dashboard',    bg: '#0C0600', accent: '#D97706', imageUrl: '' },
-      { label: 'Camera Grid View',  bg: '#0A0500', accent: '#FFB800', imageUrl: '' },
-    ],
-  },
+  id: 'securesight',
+  name: 'SecureSight AI',
+  tagline: 'AI-Powered Privacy Risk Detection System',
+
+  description: 'SecureSight AI is an intelligent privacy and cybersecurity monitoring platform that analyzes user behavior, browsing activity, and system interactions to generate real-time digital privacy risk scores and security insights.',
+
+  problem: 'Users and organizations often lack visibility into privacy vulnerabilities, unsafe browsing behavior, and potential security risks across digital platforms and online activity.',
+
+  approach: 'Developed an AI-driven behavioral analysis system combining anomaly detection, risk scoring algorithms, and real-time monitoring pipelines to identify suspicious activity and generate explainable privacy risk assessments.',
+
+  features: [
+    'Real-time privacy risk score generation',
+    'AI-based behavioral anomaly detection',
+    'Browsing activity and security analysis',
+    'Interactive security analytics dashboard',
+    'Threat monitoring and alert system',
+    'Scalable backend monitoring APIs',
+  ],
+
+  tech: [
+    'Python',
+    'Machine Learning',
+    'Cybersecurity',
+    'React.js',
+    'FastAPI',
+    'Docker',
+    'SQL',
+    'REST APIs',
+  ],
+
+  color: '#FF3CAC',
+  icon: '🔐',
+
+  github: 'https://github.com/pavithrasunilkumar/SecureSightAI',
+  live: 'https://securesight-ai.vercel.app',
+
+  screenshots: [
+    {
+      label: 'Risk Score Overview',
+      bg: '#0F0306',
+      accent: '#FF3CAC',
+      imageUrl: '/screenshots/securesight/image1.png',
+    },
+    {
+      label: 'Security Analytics',
+      bg: '#0D0205',
+      accent: '#E11D48',
+      imageUrl: '/screenshots/securesight/image2.png',
+    },
+    {
+      label: 'Threat Monitoring',
+      bg: '#0B0204',
+      accent: '#FF3CAC',
+      imageUrl: '/screenshots/securesight/image3.png',
+    },
+  ],
+},
+  
   {
-    id: 'resumiq',
-    name: 'ResumIQ',
-    tagline: 'AI Resume Screening Platform',
-    description: "An intelligent resume screening and ranking platform that uses NLP to parse resumes, extract skill entities, and match candidates against job descriptions with explainable scoring.",
-    problem: "HR teams spend 70% of hiring time on manual resume screening, introducing bias and missing qualified candidates who don't use exact keyword matches.",
-    approach: 'Built an NLP pipeline using named entity recognition for skill extraction, semantic similarity scoring for JD-resume matching, and a bias-aware ranking algorithm that surfaces qualified candidates regardless of formatting.',
-    features: [
-      'Automated resume parsing and NER',
-      'Semantic JD-to-resume matching',
-      'Bias-aware candidate ranking',
-      'Skill gap analysis and reporting',
-      'Bulk screening with priority queuing',
-      'Explainable match score breakdowns',
-    ],
-    tech: ['Python', 'NLP', 'spaCy', 'BERT', 'FastAPI', 'React', 'PostgreSQL'],
-    color: '#4ADE80',
-    icon: '📋',
-    github: 'https://github.com/pavithrasunilkumar/ResumIQ',
-    live: 'https://resumiq.vercel.app',
-    screenshots: [
-      { label: 'Resume Analyzer',    bg: '#020E08', accent: '#4ADE80', imageUrl: '' },
-      { label: 'Candidate Rankings', bg: '#020C07', accent: '#16A34A', imageUrl: '' },
-      { label: 'JD Match Report',    bg: '#010A06', accent: '#4ADE80', imageUrl: '' },
-    ],
-  },
+  id: 'maritime-sentinel',
+  name: 'Maritime Sentinel',
+  tagline: 'AI-Powered Coastal Monitoring System',
+
+  description: 'Maritime Sentinel is an AI-powered coastal surveillance platform that uses satellite imagery, computer vision, and real-time anomaly detection to identify vessels, monitor maritime activity, and detect potential security threats.',
+
+  problem: 'Traditional coastal monitoring systems struggle to efficiently track unauthorized vessels and detect maritime threats across large ocean regions in real time.',
+
+  approach: 'Built a deep learning-based surveillance pipeline using computer vision, satellite imagery analysis, and geospatial tracking to enable intelligent vessel detection and real-time maritime monitoring.',
+
+  features: [
+    'Real-time satellite imagery analysis',
+    'AI-based vessel detection and classification',
+    'Geospatial monitoring and tracking',
+    'Anomaly and threat detection system',
+    'Interactive coastal surveillance dashboard',
+    'Real-time maritime analytics and alerts',
+  ],
+
+  tech: [
+    'Python',
+    'Machine Learning',
+    'Deep Learning',
+    'Computer Vision',
+    'OpenCV',
+    'FastAPI',
+    'GIS',
+    'REST APIs',
+  ],
+
+  color: '#00C9FF',
+  icon: '🌊',
+
+  github: 'https://github.com/pavithrasunilkumar/MaritimeSentinel',
+  live: 'https://maritime-sentinel.vercel.app',
+
+  screenshots: [
+    {
+      label: 'Coastal Surveillance Map',
+      bg: '#020C10',
+      accent: '#00C9FF',
+      imageUrl: '/screenshots/maritime-sentinel/image1.png',
+    },
+    {
+      label: 'Vessel Detection Feed',
+      bg: '#020A0D',
+      accent: '#0891B2',
+      imageUrl: '/screenshots/maritime-sentinel/image2.png',
+    },
+    {
+      label: 'Threat Alerts',
+      bg: '#01080B',
+      accent: '#00C9FF',
+      imageUrl: '/screenshots/maritime-sentinel/image3.png',
+    },
+  ],
+},
   {
-    id: 'isro360',
-    name: 'Mission ISRO 360',
-    tagline: 'Space Data Visualization Platform',
-    description: "An immersive 3D data visualization platform for ISRO mission data, transforming raw telemetry and orbital mechanics data into stunning interactive visualizations for public outreach and research.",
-    problem: "Space mission data is rich but inaccessible to the public and even non-specialist researchers due to its raw, technical nature. Visualization bridges this gap.",
-    approach: "Integrated Three.js for 3D orbital visualization, D3.js for telemetry dashboards, and a real-time data pipeline from ISRO's public APIs to create an engaging, educational space data experience.",
-    features: [
-      '3D orbital trajectory visualization',
-      'Real-time telemetry dashboards',
-      'Mission timeline and milestone explorer',
-      'Satellite coverage zone mapping',
-      'Public outreach educational modules',
-      'Data export and research tools',
-    ],
-    tech: ['React', 'Three.js', 'D3.js', 'Python', 'REST APIs', 'WebGL', 'Node.js'],
-    color: '#818CF8',
-    icon: '🚀',
-    github: 'https://github.com/pavithrasunilkumar/MissionISRO360',
-    live: 'https://mission-isro-360.vercel.app',
-    screenshots: [
-      { label: '3D Orbital View',     bg: '#04030F', accent: '#818CF8', imageUrl: '' },
-      { label: 'Telemetry Dashboard', bg: '#03020D', accent: '#6366F1', imageUrl: '' },
-      { label: 'Mission Timeline',    bg: '#02010C', accent: '#818CF8', imageUrl: '' },
-    ],
-  },
+  id: 'crowdsense',
+  name: 'CrowdSense AI',
+  tagline: 'Real-Time Crowd Monitoring System',
+
+  description: 'CrowdSense AI is a real-time crowd detection and monitoring platform that uses computer vision and deep learning to analyze video feeds, estimate crowd density, and detect potential safety risks in public spaces.',
+
+  problem: 'Managing large crowds in public venues is challenging, with delayed detection of overcrowding and abnormal behavior often leading to safety and security risks.',
+
+  approach: 'Built a computer vision-based monitoring pipeline using deep learning and real-time video analytics to estimate crowd density, analyze movement patterns, and generate proactive safety alerts.',
+
+  features: [
+    'Real-time crowd density estimation',
+    'AI-based human detection and monitoring',
+    'Video feed analysis and tracking',
+    'Crowd movement and behavior analytics',
+    'Interactive monitoring dashboard',
+    'Automated safety alert system',
+  ],
+
+  tech: [
+    'Python',
+    'Machine Learning',
+    'Deep Learning',
+    'Computer Vision',
+    'OpenCV',
+    'React.js',
+    'Flask',
+    'REST APIs',
+  ],
+
+  color: '#FFB800',
+  icon: '👥',
+
+  github: 'https://github.com/pavithrasunilkumar/CrowdSenseAI',
+  live: 'https://crowdsense-ai.vercel.app',
+
+  screenshots: [
+    {
+      label: 'Density Heatmap',
+      bg: '#0E0700',
+      accent: '#FFB800',
+      imageUrl: '/screenshots/crowdsense/image1.png',
+    },
+    {
+      label: 'Risk Dashboard',
+      bg: '#0C0600',
+      accent: '#D97706',
+      imageUrl: '/screenshots/crowdsense/image2.png',
+    },
+    {
+      label: 'Camera Monitoring',
+      bg: '#0A0500',
+      accent: '#FFB800',
+      imageUrl: '/screenshots/crowdsense/image3.png',
+    },
+  ],
+},
+  {
+  id: 'resumiq',
+  name: 'ResumIQ',
+  tagline: 'AI Resume Screening & Job Matching Platform',
+
+  description: 'ResumIQ is an AI-powered resume screening and job matching platform that uses NLP and semantic analysis to evaluate resumes, identify skill gaps, and rank candidates based on job compatibility.',
+
+  problem: 'Manual resume screening is time-consuming and often misses qualified candidates due to keyword mismatch and inconsistent evaluation processes.',
+
+  approach: 'Built an NLP-driven resume analysis pipeline using semantic similarity scoring, skill extraction, and intelligent ranking algorithms to automate candidate evaluation and improve job matching accuracy.',
+
+  features: [
+    'Automated resume parsing and analysis',
+    'AI-powered resume-job matching',
+    'Skill extraction and gap analysis',
+    'Semantic similarity scoring',
+    'Candidate ranking dashboard',
+    'Interactive analytics and reporting',
+  ],
+
+  tech: [
+    'Python',
+    'Machine Learning',
+    'NLP',
+    'React.js',
+    'FastAPI',
+    'PostgreSQL',
+    'REST APIs',
+    'Semantic Analysis',
+  ],
+
+  color: '#4ADE80',
+  icon: '📄',
+
+  github: 'https://github.com/pavithrasunilkumar/ResumIQ',
+  live: 'https://resumiq.vercel.app',
+
+  screenshots: [
+    {
+      label: 'Resume Analyzer',
+      bg: '#020E08',
+      accent: '#4ADE80',
+      imageUrl: '/screenshots/resumiq/image1.png',
+    },
+    {
+      label: 'Candidate Rankings',
+      bg: '#020C07',
+      accent: '#16A34A',
+      imageUrl: '/screenshots/resumiq/image2.png',
+    },
+    {
+      label: 'JD Match Report',
+      bg: '#010A06',
+      accent: '#4ADE80',
+      imageUrl: '/screenshots/resumiq/image3.png',
+    },
+  ],
+},
+  {
+  id: 'isro360',
+  name: 'Mission ISRO 360',
+  tagline: 'AI & Space Data Visualization Platform',
+
+  description: 'Mission ISRO 360 is an interactive space analytics and visualization platform that presents ISRO mission data, satellite insights, and global space agency comparisons using AI-driven analytics and immersive visual dashboards.',
+
+  problem: 'Space mission data is often complex and difficult for students and researchers to explore, limiting accessibility, understanding, and public engagement.',
+
+  approach: 'Built a full-stack data visualization platform integrating interactive dashboards, space analytics, and real-time mission data pipelines to simplify exploration of ISRO missions and satellite insights.',
+
+  features: [
+    'Interactive ISRO mission visualization',
+    'Satellite and launch analytics dashboard',
+    'Global space agency comparison system',
+    'Real-time mission insights and tracking',
+    'Data-driven charts and visual reports',
+    'Responsive analytics interface',
+  ],
+
+  tech: [
+    'Python',
+    'React.js',
+    'Data Visualization',
+    'JavaScript',
+    'REST APIs',
+    'Node.js',
+    'HTML',
+    'CSS',
+  ],
+
+  color: '#818CF8',
+  icon: '🚀',
+
+  github: 'https://github.com/pavithrasunilkumar/MissionISRO360',
+  live: 'https://mission-isro-360.vercel.app',
+
+  screenshots: [
+    {
+      label: 'Mission Dashboard',
+      bg: '#04030F',
+      accent: '#818CF8',
+      imageUrl: '/screenshots/isro360/image1.png',
+    },
+    {
+      label: 'Satellite Analytics',
+      bg: '#03020D',
+      accent: '#6366F1',
+      imageUrl: '/screenshots/isro360/image2.png',
+    },
+    {
+      label: 'Launch Insights',
+      bg: '#02010C',
+      accent: '#818CF8',
+      imageUrl: '/screenshots/isro360/image3.png',
+    },
+  ],
+},
   {
     id: 'bird-migration',
     name: 'BNHS Bird Migration',

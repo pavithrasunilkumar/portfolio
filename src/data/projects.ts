@@ -316,13 +316,7 @@ export const projects: Project[] = [
       bg: '#020A0D',
       accent: '#0891B2',
       imageUrl: '/screenshots/maritime-sentinel/image2.png',
-    },
-    {
-      label: 'Threat Alerts',
-      bg: '#01080B',
-      accent: '#00C9FF',
-      imageUrl: '/screenshots/maritime-sentinel/image3.png',
-    },
+    }
   ],
 },
   {

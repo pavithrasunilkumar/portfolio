@@ -65,29 +65,80 @@ export default function AboutSection() {
                 </p>
 
                 <div className="space-y-4 text-white/70 leading-relaxed">
-                  <p>
-                    I'm a Computer Science engineer with a specialization in{' '}
-                    <span className="text-accent font-medium">Artificial Intelligence & Data Science</span>,
-                    driven by the belief that intelligent systems can fundamentally transform how we solve
-                    the world's hardest problems.
-                  </p>
-                  <p>
-                    My work spans the full AI stack — from architecting neural network pipelines and
-                    training large-scale models, to building beautiful interfaces that make AI accessible.
-                    I bring a{' '}
-                    <span className="text-purple-400 font-medium">product engineer's mindset</span>{' '}
-                    to every project: ship fast, iterate smart, and always keep the user at the center.
-                  </p>
-                  <p>
-                    When I'm not training models or shipping features, I'm exploring the frontier of{' '}
-                    <span className="text-pink-400 font-medium">Generative AI</span> and contributing
-                    to open-source AI tools that democratize access to intelligent technology.
-                  </p>
-                </div>
+  <p>
+    I’m <span className="text-accent font-medium">Pavithra Sunilkumar</span>, a
+    Computer Science (AI & Data Science) Engineering student who doesn’t just
+    write code — I build things that people actually enjoy using.
+  </p>
 
+  <p>
+    I like taking real-world problems and turning them into creative,
+    interactive solutions that feel simple on the surface but are powered by
+    strong logic underneath. For me, coding isn’t just about functionality —
+    it’s about making something engaging, intuitive, and a little addictive.
+  </p>
+
+  <p>
+    I enjoy working where creativity meets technology, especially in{' '}
+    <span className="text-purple-400 font-medium">
+      AI, Machine Learning, Full-Stack Development, and DevOps
+    </span>.
+    Strong in Data Structures & Algorithms (DSA) and Object-Oriented
+    Programming (OOP), I focus on writing code that’s not just working, but
+    clean, efficient, and scalable.
+  </p>
+  <p>
+    You’ll often find me experimenting with ideas, improving existing systems,
+    or building something just because{' '}
+    <span className="text-pink-400 font-medium">
+      “this could be cooler.”
+    </span>
+  </p>
+  <p>
+    I believe the best technology is the kind people don’t just use — but want
+    to keep coming back to.
+  </p>
+  <p>
+    Always learning, always building, and always trying to make things a little
+    more creative than before.
+  </p>
+</div>
                 {/* Skill highlights */}
                 <div className="flex flex-wrap gap-2 mt-6">
-                  {['Python', 'PyTorch', 'LLMs', 'Computer Vision', 'NLP', 'React', 'FastAPI'].map(tag => (
+                  {[
+  'Python',
+  'JavaScript',
+  'TypeScript',
+  'Machine Learning',
+  'Deep Learning',
+  'Generative AI',
+  'LLMs',
+  'NLP',
+  'Computer Vision',
+  'PyTorch',
+  'TensorFlow',
+  'OpenCV',
+  'React.js',
+  'Node.js',
+  'FastAPI',
+  'Flask',
+  'MongoDB',
+  'PostgreSQL',
+  'SQL',
+  'REST APIs',
+  'Docker',
+  'AWS',
+  'Git',
+  'GitHub',
+  'Linux',
+  'Data Visualization',
+  'Recommendation Systems',
+  'Semantic Analysis',
+  'Speech Processing',
+  'Real-Time Systems',
+  'API Integration',
+  'Full-Stack Development',
+].map(tag => (
                     <span key={tag}
                       className="text-xs px-3 py-1 rounded-full font-mono"
                       style={{
@@ -131,9 +182,9 @@ export default function AboutSection() {
         <FadeIn delay={0.3} className="mt-12">
           <div className="glass rounded-2xl p-6 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
             {[
-              { value: '9+', label: 'AI Projects Built', color: '#00F5FF' },
+              { value: '10+', label: 'AI Projects Built', color: '#00F5FF' },
               { value: '5+', label: 'ML Models Deployed', color: '#7B2FBE' },
-              { value: '4+', label: 'Industry Certifications', color: '#FF3CAC' },
+              { value: '10+', label: 'Industry Certifications', color: '#FF3CAC' },
               { value: '7.98', label: 'CGPA', color: '#4ADE80' },
             ].map(metric => (
               <div key={metric.label} className="flex flex-col items-center gap-1">

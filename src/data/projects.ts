@@ -208,6 +208,126 @@ export const projects: Project[] = [
     },
   ],
 },
+{
+  id: 'finflow',
+  name: 'FinFlow',
+  tagline: 'AI-Powered Personal Finance & Expense Intelligence Platform',
+
+  description:
+    'FinFlow is a full-stack AI-powered personal finance intelligence platform that helps users track expenses, analyze spending behavior, generate financial insights, and optimize budgeting through intelligent analytics and interactive dashboards.',
+
+  problem:
+    'Traditional finance tracking applications often lack intelligent analytics, behavioral insights, and adaptive budgeting systems, making personal financial management inefficient and difficult to sustain.',
+
+  approach:
+    'Built a full-stack finance analytics platform using React, Node.js, and MongoDB integrated with intelligent expense categorization, behavioral spending analysis, dynamic budgeting systems, and real-time financial visualization pipelines.',
+
+  features: [
+    'AI-powered expense categorization and tracking',
+    'Interactive financial analytics dashboard',
+    'Budget planning and smart spending insights',
+    'Behavioral spending analysis system',
+    'Real-time expense monitoring and visualization',
+    'Responsive full-stack finance management interface',
+  ],
+
+  tech: [
+    'React.js',
+    'Node.js',
+    'MongoDB',
+    'JavaScript',
+    'REST APIs',
+    'Data Visualization',
+    'Financial Analytics',
+  ],
+
+  color: '#4ADE80',
+  icon: '💸',
+
+  github: 'https://github.com/pavithrasunilkumar/FinFlow',
+  live: '',
+
+  screenshots: [
+    {
+      label: 'Finance Dashboard',
+      bg: '#02120A',
+      accent: '#4ADE80',
+      imageUrl: '',
+    },
+    {
+      label: 'Expense Analytics',
+      bg: '#03150C',
+      accent: '#22C55E',
+      imageUrl: '',
+    },
+    {
+      label: 'Budget Insights',
+      bg: '#04180E',
+      accent: '#4ADE80',
+      imageUrl: '',
+    },
+  ],
+},{
+  id: 'classwatch',
+  name: 'ClassWatch',
+  tagline: 'AI-Powered Smart Classroom Monitoring System',
+
+  description:
+    'ClassWatch is an AI-powered classroom intelligence and monitoring platform that uses computer vision, behavioral analytics, and real-time monitoring pipelines to analyze classroom engagement, automate attendance tracking, and generate actionable learning insights.',
+
+  problem:
+    'Traditional classroom monitoring and attendance systems are manual, inefficient, and unable to provide meaningful engagement analytics or real-time behavioral insights for educators.',
+
+  approach:
+    'Developed a computer vision-driven smart classroom system using OpenCV and deep learning pipelines for automated attendance tracking, engagement monitoring, behavioral analysis, and real-time classroom analytics.',
+
+  features: [
+    'AI-powered automated attendance tracking',
+    'Real-time classroom engagement monitoring',
+    'Computer vision-based behavioral analytics',
+    'Interactive classroom analytics dashboard',
+    'Student activity and participation analysis',
+    'Scalable real-time monitoring pipeline',
+  ],
+
+  tech: [
+    'Python',
+    'Machine Learning',
+    'Computer Vision',
+    'OpenCV',
+    'React.js',
+    'FastAPI',
+    'Deep Learning',
+    'REST APIs',
+  ],
+
+  color: '#22D3EE',
+  icon: '📚',
+
+  github: 'https://github.com/pavithrasunilkumar/ClassWatch',
+  live: '',
+
+  screenshots: [
+    {
+      label: 'Classroom Monitoring Dashboard',
+      bg: '#021116',
+      accent: '#22D3EE',
+      imageUrl: '',
+    },
+    {
+      label: 'Engagement Analytics',
+      bg: '#03161B',
+      accent: '#06B6D4',
+      imageUrl: '',
+    },
+    {
+      label: 'Attendance Intelligence',
+      bg: '#041A20',
+      accent: '#22D3EE',
+      imageUrl: '',
+    },
+  ],
+},
   {
   id: 'securesight',
   name: 'SecureSight AI',
@@ -243,7 +363,7 @@ export const projects: Project[] = [
   icon: '🔐',
 
   github: 'https://github.com/pavithrasunilkumar/SecureSightAI',
-  live: 'https://securesight-ai.vercel.app',
+  live: '',
 
   screenshots: [
     {
@@ -302,7 +422,7 @@ export const projects: Project[] = [
   icon: '🌊',
 
   github: 'https://github.com/pavithrasunilkumar/MaritimeSentinel',
-  live: 'https://maritime-sentinel.vercel.app',
+  live: '',
 
   screenshots: [
     {
@@ -354,7 +474,7 @@ export const projects: Project[] = [
   icon: '👥',
 
   github: 'https://github.com/pavithrasunilkumar/CrowdSenseAI',
-  live: 'https://crowdsense-ai.vercel.app',
+  live: '',
 
   screenshots: [
     {
@@ -412,7 +532,7 @@ export const projects: Project[] = [
   icon: '📄',
 
   github: 'https://github.com/pavithrasunilkumar/ResumIQ',
-  live: 'https://resumiq.vercel.app',
+  live: '',
 
   screenshots: [
     {
@@ -470,7 +590,7 @@ export const projects: Project[] = [
   icon: '🚀',
 
   github: 'https://github.com/pavithrasunilkumar/MissionISRO360',
-  live: 'https://mission-isro-360.vercel.app',
+  live: '',
 
   screenshots: [
     {
@@ -512,7 +632,7 @@ export const projects: Project[] = [
     color: '#34D399',
     icon: '🦅',
     github: 'https://github.com/pavithrasunilkumar/BNHSBirdMigration',
-    live: 'https://bnhs-migration.vercel.app',
+    live: '',
     screenshots: [
       { label: 'Migration Route Map',  bg: '#020E08', accent: '#34D399', imageUrl: '' },
       { label: 'Species Analytics',    bg: '#020C07', accent: '#059669', imageUrl: '' },
@@ -538,7 +658,7 @@ export const projects: Project[] = [
     color: '#F87171',
     icon: '🛡️',
     github: 'https://github.com/pavithrasunilkumar/AdversarialML-ZeroDay',
-    live: 'https://adversarial-ml-demo.vercel.app',
+    live: '',
     screenshots: [
       { label: 'Attack Detection Feed', bg: '#0E0202', accent: '#F87171', imageUrl: '' },
       { label: 'Anomaly Heatmap',       bg: '#0C0202', accent: '#EF4444', imageUrl: '' },
@@ -636,17 +756,12 @@ export const certifications = [
     color: '#FFB800',
   },
   {
-    name: 'AWS Certified Cloud Practitioner',
-    issuer: 'Amazon Web Services',
-    year: '2024',
-    color: '#FF9900',
-  },
-  {
-    name: 'AWS Certified DevOps Engineer – Professional',
-    issuer: 'Amazon Web Services',
-    year: '2024',
-    color: '#FF6B35',
-  },
+  name: 'AI & Full Stack Development Program',
+  issuer: 'Infosys Springboard',
+  year: '2024',
+  color: '#00AEEF',
+},
+ 
 ];
 
 // ─────────────────────────────────────────────────────────────
